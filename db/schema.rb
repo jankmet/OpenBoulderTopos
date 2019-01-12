@@ -10,9 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180608132730) do
+ActiveRecord::Schema.define(version: 2018_06_08_132730) do
 
   create_table "crags", force: :cascade do |t|
+    t.string "identifier"
     t.string "name", null: false
     t.string "country", null: false
     t.float "latitude"
